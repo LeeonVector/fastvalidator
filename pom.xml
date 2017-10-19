@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+   <parent>
+        <groupId>com.aliexpress</groupId>
+        <artifactId>aliexpress-parent</artifactId>
+        <version>3-SNAPSHOT</version>
+  </parent>
+
+
+	<groupId>com.alibaba.fastvalidator</groupId>
+	<artifactId>fastvalidator</artifactId>
+	<packaging>pom</packaging>
+	<version>2.5.3</version>
+	<name>fastvalidator-parent</name>
+	<url>http://gitlab.alibaba-inc.com/ae-wsmobile/fastvalidator</url>
+	<developers>
+        	<developer>
+            		<email>jasen.zhangj@alibaba-inc.com</email>
+        	</developer>
+        </developers>
+	<properties>
+			<maven.compiler.source>1.7</maven.compiler.source>
+			<maven.compiler.target>1.7</maven.compiler.target>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>./fastvalidator-logger</module>
+		<module>./fastvalidator-constraints</module>
+		<module>./fastvalidator-meta</module>
+		<module>./fastvalidator-generator</module>
+		<module>./fastvalidator-jsr</module>
+		<module>./fastvalidator-core</module>
+		<module>./fastvalidator-spring-boot-starter</module>
+		<module>./fastvalidator-i18n-spring-boot-starter</module>
+		<module>./fastvalidator-test</module>
+	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
